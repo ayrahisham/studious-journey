@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<LOGISTIC>
+	<SUPPLIER ID = "TopPart">
+		<supplierName>Top Part</supplierName>
+		<address>
+			<suppStreet>318 Orchard Road</suppStreet>
+			<suppBuilding>NEON</suppBuilding>
+			<suppPostalCode>118489</suppPostalCode>	
+			<suppCountry>Singapore</suppCountry>
+		</address>
+		<initiates>
+			<SHIPMENT ID = "S20161107001">
+				<shipID>S20161107001</shipID>
+				<shipDate>07-11-2016</shipDate>
+				<CUSTOMER ID = "C12345">
+					<custId>C12345</custId>
+					<custName>Total Solution</custName>
+					<CustomerAddress>
+						<custStreet>718 Main Street</custStreet>
+						<custBuilding>Idea Tower 1</custBuilding>
+						<custPostalCode>468419</custPostalCode>
+						<custCountry>Singapore</custCountry>
+					</CustomerAddress>
+				</CUSTOMER>
+			</SHIPMENT>
+			<SHIPMENT ID = "S20161107006">
+				<shipID>20161107006</shipID>
+				<shipDate>07-11-2016</shipDate>
+				<CUSTOMER ID = "C54321">
+					<custId>C54321</custId>
+					<custName>Computer Security Pte Ltd</custName>
+					<CustomerAddress>
+						<custStreet>112 Science Park 4</custStreet>
+						<custBuilding>Smart</custBuilding>
+						<custPostalCode>368127</custPostalCode>
+						<custCountry>Singapore</custCountry>
+					</CustomerAddress>
+				</CUSTOMER>
+			</SHIPMENT>
+		</initiates>
+	</SUPPLIER>
+	<PART ID = "P4945112">
+		<partNumber>P4945112</partNumber>
+		<partName>Red Toner</partName>
+		<price>
+			<unit>Dollar</unit>
+			<base>Singapore</base>
+			<value>90</value>
+		</price>
+		<is-in IDREF = "S20161107001"/>
+	</PART>
+	<PART ID = "P0010116">
+		<partNumber>P0010116</partNumber>
+		<partName>Color Printer</partName>
+		<price>
+			<unit>Dollar</unit>
+			<base>Singapore</base>
+			<value>1000</value>
+		</price>
+		<is-in IDREF = "S20161107001"/>
+	</PART>
+	<PART ID = "P1123456">
+		<partNumber>P1123456</partNumber>
+		<partName>HD Scanner</partName>
+		<price>
+			<unit>Dollar</unit>
+			<base>Singapore</base>
+			<value>800</value>
+		</price>
+		<is-in IDREF = "S20161107006"/>
+	</PART>
+</LOGISTIC>

@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<! DOCTYPE BOOKSTORE SYSTEM "solution2.dtd">
+
+<BOOKSTORE name = "MyBookStore">
+	<BRANCH ID = "FANTASTIC">
+		<name>Fantastic Bookstore</name>
+		<address>10 Clementi Road</address>
+    <tel>
+		  <direct>65123456</direct>
+		</tel>
+		<BOOK CATEGORY = "COOKING">
+			<title>Healthy Cooking</title>
+			<author>Jenny Penn</author>
+			<yearPub>2015</yearPub>
+			<price>$28.00</price>
+		</BOOK>
+		<BOOK CATEGORY = "GARDENING">
+			<title>Gardening Techniques</title>
+			<author>Amy Brown</author>
+			<yearPub>2014</yearPub>
+			<price>$38.00</price>
+		</BOOK>
+	</BRANCH>
+	<BRANCH ID = "EXCELLENT">
+		<name>Excellent Bookstore</name>
+		<address>1 Bukit Timah Road</address>
+    <tel>
+		  <hotline>180065123456</hotline>
+     </tel>
+		 <BOOK CATEGORY = "PHOTOGRAPHY">
+				<title>Night Photography</title>
+				<author>Peter Young</author>
+				<yearPub>2014</yearPub>
+				<price>100.00</price>
+			</BOOK>
+	</BRANCH>
+</BOOKSTORE>
